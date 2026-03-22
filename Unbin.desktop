@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Unbin
+Comment=Easily convert text to binary and vice-versa
+Icon=/usr/share/pixmaps/Unbin.tga
+Exec=/usr/bin/Unbin
+Terminal=false
+Type=Application
+Categories=GNOME;GTK;Utility;
+GenericName[en_US]=
+Comment[en_US]=A Python script to convert to and from binary/hex.

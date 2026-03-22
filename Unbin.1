@@ -1,0 +1,73 @@
+.TH Unbin 1 "March 21, 2026" "Version 3.0" "Unbin Manual Page"
+.SH NAME
+Unbin \- convert text to/from binary/hex and reverse strings
+.SH "SYNOPSIS"
+\fBUnbin\fR [\fI-parameter\fR] [\fItext\fR | \fI-f file\fR]
+.SH "DESCRIPTION"
+\fBUnbin\fR is a tool to easily convert text to binary (8-bit groups), hexadecimal (2-char groups), and vice-versa, or to reverse text strings.
+It features both a Graphical User Interface (Tkinter) and a Command Line Interface.
+
+If launched without parameters, it attempts to start the GUI. If Tkinter is not available, it falls back to an interactive terminal mode.
+
+.SH "OPTIONS"
+.TP
+\fB-help\fR
+Show help message.
+.TP
+\fB-b\fR
+Convert text to binary.
+.TP
+\fB-bt\fR
+Convert binary to text.
+.TP
+\fB-h\fR
+Convert text to hexadecimal.
+.TP
+\fB-ht\fR
+Convert hex to text.
+.TP
+\fB-r\fR, \fB-rt\fR
+Reverse a string.
+.TP
+\fB-f \fIfile\fR
+Specify a file to process.
+.TP
+\fB-t\fR, \fB-nogui\fR
+Force terminal mode.
+.TP
+\fB-l\fR
+Print license information.
+.TP
+\fB-moo\fR
+Easter egg.
+
+.SH "EXAMPLES"
+.TP
+\fBUnbin -b "Hello"\fR
+Yields: 01001000 01100101 01101100 01101100 01101111
+.TP
+\fBUnbin -h "Hello"\fR
+Yields: 48 65 6c 6c 6f
+.TP
+\fBUnbin -bt "01001000 01100101"\fR
+Yields: He
+
+.SH "FILES"
+.TP
+\fI/usr/local/share/Unbin/Unbin\fR
+Main Python script.
+.TP
+\fI/usr/bin/Unbin\fR
+Launcher script.
+.TP
+\fI/usr/share/pixmaps/Unbin.tga\fR
+Application icon.
+
+.SH "BUGS"
+Report bugs to the maintainer.
+
+.SH "AUTHOR"
+Jonathan Torres
+
+.SH "LICENSE"
+Licensed under GNU GPL v3.0 or later.
